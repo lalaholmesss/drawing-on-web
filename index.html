@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Pixel Art Editor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="colors">
+            <h3>Colors</h3>
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+            <div class="four"></div>
+            <div class="five"></div>
+            <div class="six"><input type="color" value="#437b43"></div>
+        </div>
+        <div class="input-canvas">
+            <canvas></canvas>
+        </div>
+        <div class="tools">
+            <h3>Tools</h3>
+            <div> <i class="fa-solid fa-pencil"></i></div>
+            <div> <i class="fa-solid fa-paintbrush"></i></div>
+            <div> <i class="fa-solid fa-eraser"></i></div>
+            <div class="inp-range"><input type="range" id="size-slider" min="1" max="30" value="5"></div>
+            <div class="finish">
+                <button id="clear">Clear</button>
+                <button id="save">Save as Image</button>
+                <button id="send">Send me!</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
